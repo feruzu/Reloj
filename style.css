@@ -1,0 +1,121 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   height: 90vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #d4d4d4;
+   font-size: 35px;
+}
+
+.container {
+   position: absolute;
+   border-radius: 50%;
+   background: linear-gradient(145deg, #d4d4d4, #e4e4e4);
+   box-shadow: 18px 18px 36px #adadad,
+      -18px -18px 36px #e7e7e7;
+   padding: 20px;
+}
+
+.reloj {
+   height: 100px;
+   width: 100px;
+   border-radius: 50%;
+   background: linear-gradient(145deg, #bfbfbf, #e3e3e3);
+   box-shadow: 20px 20px 60px #b4b4b4,
+      -20px -20px 60px #f4f4f4;
+   padding: 147px;
+}
+
+.centro {
+   width: 10px;
+   height: 10px;
+   background-color: #26282b;
+   border-radius: 50%;
+   position: absolute;
+   top: 56.2%;
+   left: 56.2%;
+   margin: -25px 0 0 -25px;
+   z-index: 100;
+}
+
+.linea-horizontal {
+   position: absolute;
+   width: 294px;
+   height: 1px;
+   margin-left: -147px;
+   background-color: #26282b;
+   opacity: 10%;
+}
+
+.linea-vertical {
+   position: absolute;
+   height: 294px;
+   width: 1px;
+   margin-top: -147px;
+   background-color: #26282b;
+   opacity: 10%;
+}
+
+/* Agujas */
+
+.hs {
+   height: 100px;
+   width: 5px;
+   background-color: #26282b;
+   margin-top: -102px;
+}
+
+.horas {
+   display: flex;
+   justify-content: center;
+   position: absolute;
+}
+
+.min {
+   height: 130px;
+   width: 2px;
+   background-color: #26282b;
+   margin-top: -130px;
+   border-radius: 5px;
+}
+
+.minutos {
+   display: flex;
+   justify-content: center;
+   position: absolute;
+}
+
+.seg {
+   height: 115px;
+   width: 2.5px;
+   background-color: #ff555d;
+   position: absolute;
+   border-radius: 5px;
+}
+
+.segundos {
+   display: flex;
+   justify-content: center;
+   position: absolute;
+}
+
+.segundos::before,
+.horas::before,
+.minutos::before {
+   content: '';
+   position: absolute;
+}
+
+.hora-numeros {
+   margin-top: 500px;
+   color: white;
+   font-size: 40px;
+   font-family: 'Share Tech Mono', monospace;
+   font-weight: bold;
+}
